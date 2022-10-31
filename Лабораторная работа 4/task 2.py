@@ -15,7 +15,7 @@ def get_call(dict_):
     for symbul in dict_:
         sum_symbul += dict_[symbul]
     for symbul in dict_:
-        dict_[symbul] = round(dict_[symbul] / sum_symbul, 2)
+        dict_[symbul] = round(dict_[symbul] / sum_symbul * 100, 1)
     return dict_
 main_str_ = """
     Данное предложение будет разбиваться на отдельные слова. 
