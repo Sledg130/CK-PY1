@@ -20,3 +20,4 @@ to_csv_file(OUTPUT_FILE, headers_list, data)
 with open(OUTPUT_FILE, encoding='UTF-8') as output_f:
     for line in output_f:
         print(line, end="")
+        
