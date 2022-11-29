@@ -8,12 +8,11 @@ data = [
     ['-118.360000', '33.820000', '28.000000', '67.000000', '15.000000', '49.000000', '11.000000', '6.135900', '330000.000000'],
 ]
 
-def to_csv_file(OUTPUT_FILE, headers_list, data, delimiter = ',', new_line = '\n'):
-    with open(OUTPUT_FILE, 'w') as f:
+def to_csv_file(filenames, headers_list, data, delimiter = ',', new_line = '\n'):
+    with open(filenames, 'w') as f:
         f.write(delimiter.join(headers_list) + new_line)
         for rows in data:
            f.write(delimiter.join(rows) + new_line)
-    return
 
 to_csv_file(OUTPUT_FILE, headers_list, data)
 
